@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  justify-content: space-evenly;
+}
+
+span {
+  color: black;
+}
+
+.game {
+  width: 500px;
+  height: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFE9D9;
+  border-radius: 20px;
+}
+
+.content {
+  margin: auto;
+}
+
+.ground {
+  width: 300px;
+  height: 4px;
+  margin: auto;
+  background-color: black;
+}
+
+.base {
+  width: 2px;
+  height: 50px;
+  padding-top: 30%;
+  margin-left: 10%;
+  background-color: black;
+}
+
+.word {
+  display: flex;
+  width: 200px;
+  height: 30px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.input {
+  margin: auto;
+  display: flex;
+  width: 300px;
+  height: 30px;
+}
+
+.input > input {
+  width: 80%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid;
+  border-radius: 5px 0px 0px 5px;
+  text-align: center;
+  outline: none;
+}
+
+.input > button {
+  width: 20%;
+  height: 109%;
+  text-align: center;
+  background-color: #D0B27A;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: monospace;
+  color: #AC7349;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.head {
+  position: absolute;
+  margin-top: 50%;
+}
+.suport {
+  width: 100px;
+  margin-left: 10%;
+  height: 2px;
+  background-color: black;
+}
+
+.rope {
+  width: 2px;
+  height: 20px;
+  position: relative;
+  background-color: black;
+  left: 42.5%;
+  top: 11%;
+}
+
+.body {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  top: 29%;
+  left: 40.5%;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+
+.body-some {
+  position: relative;
+  width: 2px;
+  height: 40px;
+  background-color: black;
+  left: 44%;
+  margin-top: 100%;
+}
+
+.hand, .footer {
+  position: absolute;
+  display: flex;
+  margin-left: -64%;
+  width: 23px;
+  justify-content: space-around;
+  margin-top: 158%;
+}
+
+.hand-right, .footer-right {
+  position: relative;
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.hand-left, .footer-left {
+  position: relative;
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  transform: rotate(135deg);
+}
+
+.footer {
+  margin-top: 498%;
+  width: 13px;
+  margin-left: -11%;
+}
+
+.result {
+  margin: auto;
+  letter-spacing: 10px;
+  display: none;
+}
+.body, .footer, .hand, .body-some{
+  display: none;
+}
